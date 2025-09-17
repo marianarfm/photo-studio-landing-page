@@ -4,220 +4,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paint-and-Shoot Studio | Início</title>
+    <title>Point-and-Shoot Studio | Início</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="icon" href="assets/icons/camera-icon.svg" type="image/x-icon">
+    <link rel="icon" href="assets/icons/camera.svg" type="image/x-icon">
     <script defer src="script.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div class="logo-wrapper">
-                <img class="logo" src="assets/images/logo.webp" alt="Logo do Website" onclick="window.location.href='#impact';" style="cursor: pointer;">
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__logo-wrapper">
+                <img class="nav__logo" src="assets/images/logo.webp" alt="Logo do Website" onclick="window.location.href='#hero';" style="cursor: pointer;">
             </div>
 
-            <ul class="nav-bar-items">
-                <li class="nav-bar-item"><a href="#about-us">Sobre Nós</a></li>
-                <li class="nav-bar-item"><a href="#studio-services">Locação e Serviços</a></li>
-                <li class="nav-bar-item"><a href="#gallery">Galeria</a></li>
-                <li class="nav-bar-item"><a href="#customer-reviews">Depoimentos de Clientes</a></li>
-                <li class="nav-bar-item"><a href="#contact">Contato</a></li>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#about" class="nav__link">Sobre Nós</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Locação e Serviços</a></li>
+                <li class="nav__item"><a href="#gallery" class="nav__link">Galeria</a></li>
+                <li class="nav__item"><a href="#reviews" class="nav__link">Depoimentos de Clientes</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contato</a></li>
             </ul>
 
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <button class="nav__menu-toggle" onclick="toggleMenu()">☰</button>
         </nav>
     </header>
 
-    <main>
-        <section id="impact">
-            <div class="slideshow-wrapper">
-                <div class="slideshow">
-                    <img id="slide-1" src="assets/images/kobu-agency-1.webp" alt="">
-                    <img id="slide-2" src="assets/images/kobu-agency-2.webp" alt="">
-                    <img id="slide-3" src="assets/images/kobu-agency-3.webp" alt="">
-                    <img id="slide-4" src="assets/images/kobu-agency-4.webp" alt="">
+    <main class="main">
+        <section id="hero" class="hero">
+            <div class="hero__slideshow-wrapper">
+                <div class="hero__slideshow">
+                    <img id="hero__slide--1" class="hero__slide" src="assets/images/kobu-agency-1.webp" alt="">
+                    <img id="hero__slide--2" class="hero__slide" src="assets/images/kobu-agency-2.webp" alt="">
+                    <img id="hero__slide--3" class="hero__slide" src="assets/images/kobu-agency-3.webp" alt="">
+                    <img id="hero__slide--4" class="hero__slide" src="assets/images/kobu-agency-4.webp" alt="">
                 </div>
 
-                <div class="slideshow-nav">
-                    <a href="#slide-1"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
-                    <a href="#slide-4"></a>
+                <div class="hero__slideshow-nav">
+                    <a href="#hero__slide--1" class="hero__nav-dot"></a>
+                    <a href="#hero__slide--2" class="hero__nav-dot"></a>
+                    <a href="#hero__slide--3" class="hero__nav-dot"></a>
+                    <a href="#hero__slide--4" class="hero__nav-dot"></a>
                 </div>
             </div>
 
-            <div class="impact-content">
-                <h1 class="impact-text"><b>Transforme Ideias em Realidade</b></h1>
-                <p class="impact-text">Descubra nosso estúdio completo, equipado para dar vida às suas criações visuais com qualidade inigualável.</p>
-                <button class="button" onclick="window.location.href='#studio-services';">Saiba Mais</button>
-            </div>
-        </section>
-
-        <section id="about-us" class="detailed-section hidden">
-            <h2><b>Sobre Nós</b></h2>
-            <div class="detailed-section-content">
-                <div class="detailed-section-img">
-                    <img src="assets/images/kobu-agency-5.webp" alt="">
-                </div>
-
-                <div class="detailed-section-text">
-                    <h3><b>Nossa trajetória, missão e compromisso</b></h3>
-                    <p>Somos um estúdio de fotografia fundado por apaixonados por capturar momentos inesquecíveis. Nossa história começou com câmeras point-and-shoot, que despertaram a curiosidade e o amor pela arte fotográfica. Desde então, transformamos essa paixão em uma missão: oferecer imagens que contem histórias, preservem memórias e transmitam emoções com qualidade e sensibilidade.</p>
-                    <p>Nosso compromisso é proporcionar experiências únicas e personalizadas, com foco na autenticidade, criatividade e atenção aos detalhes. Valorizamos a conexão humana, a ética profissional e a busca contínua pela inovação, garantindo que cada registro seja uma obra-prima que reflete a essência de cada cliente.</p>
-                    <p>Seja para eternizar celebrações, fortalecer marcas ou criar retratos que inspiram, estamos aqui para transformar momentos em imagens que duram para sempre.</p>
-                </div>
+            <div class="hero__content">
+                <h1 class="hero__title"><b>Transforme Ideias em Realidade</b></h1>
+                <p class="hero__subtitle">Descubra nosso estúdio completo, equipado para dar vida às suas criações visuais com qualidade inigualável.</p>
+                <button class="hero__button button" onclick="window.location.href='#services';">Saiba Mais</button>
             </div>
         </section>
 
-        <section id="studio-services" class="detailed-section hidden">
-            <h2><b>Locação e Serviços</b></h2>
-            <div class="detailed-section-content">
-                <div class="detailed-section-img">
-                    <img src="assets/images/randy-fath.webp" alt="">
+        <section id="about" class="section section--detailed section--hidden">
+            <h2 class="section__title"><b>Sobre Nós</b></h2>
+            <div class="section__content">
+                <div class="section__image">
+                    <img src="assets/images/kobu-agency-5.webp" alt="" class="section__img">
                 </div>
 
-                <div class="detailed-section-text">
-                    <h3><b>Conheça nosso estúdio e nossos serviços</b></h3>
-                    <h4>Locação - Estúdio de 64m²</h4>
-                    <p>Valor por hora: <b>R$ 90,00</b> (para mínimo de 5 horas)<br>
+                <div class="section__text">
+                    <h3 class="section__subtitle"><b>Nossa trajetória, missão e compromisso</b></h3>
+                    <p class="section__paragraph">Somos um estúdio de fotografia fundado por apaixonados por capturar momentos inesquecíveis. Nossa história começou com câmeras point-and-shoot, que despertaram a curiosidade e o amor pela arte fotográfica. Desde então, transformamos essa paixão em uma missão: oferecer imagens que contem histórias, preservem memórias e transmitam emoções com qualidade e sensibilidade.</p>
+                    <p class="section__paragraph">Nosso compromisso é proporcionar experiências únicas e personalizadas, com foco na autenticidade, criatividade e atenção aos detalhes. Valorizamos a conexão humana, a ética profissional e a busca contínua pela inovação, garantindo que cada registro seja uma obra-prima que reflete a essência de cada cliente.</p>
+                    <p class="section__paragraph">Seja para eternizar celebrações, fortalecer marcas ou criar retratos que inspiram, estamos aqui para transformar momentos em imagens que duram para sempre.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section section--detailed section--hidden">
+            <h2 class="section__title"><b>Locação e Serviços</b></h2>
+            <div class="section__content">
+                <div class="section__image">
+                    <img src="assets/images/randy-fath.webp" alt="" class="section__img">
+                </div>
+
+                <div class="section__text">
+                    <h3 class="section__subtitle"><b>Conheça nosso estúdio e nossos serviços</b></h3>
+                    <h4 class="section__heading">Locação - Estúdio de 64m²</h4>
+                    <p class="section__paragraph">Valor por hora: <b>R$ 90,00</b> (para mínimo de 5 horas)<br>
                     Valor por hora: <b>R$ 80,00</b> (para mínimo de 10 horas)</p>
-                    <h4>Serviços</h4>
-                    <p><b>Fotografia de retrato</b><br>
+                    <h4 class="section__heading">Serviços</h4>
+                    <p class="section__paragraph"><b>Fotografia de retrato</b><br>
                     • Ensaios pessoais e familiares<br>
                     • Ensaios para modelos, atores e profissionais que precisam de retratos corporativos</p>
 
-                    <p><b>Fotografia de casamento e eventos</b><br>
+                    <p class="section__paragraph"><b>Fotografia de casamento e eventos</b><br>
                     • Cobertura de casamentos, aniversários, batizados, formaturas e eventos corporativos<br>
                     • Ensaios pré e pós-casamento, como pré-wedding e trash the dress</p>
-                    <p><b>Fotografia corporativa e comercial</b><br>
+                    <p class="section__paragraph"><b>Fotografia corporativa e comercial</b><br>
                     • Retratos empresariais e de equipe para sites e redes sociais<br>
                     • Fotografia de produtos (e-commerce, catálogos)<br>
                     • Imagens para campanhas publicitárias e branding</p>
-                    <p><b>Fotografia de moda e editorial</b><br>
+                    <p class="section__paragraph"><b>Fotografia de moda e editorial</b><br>
                     • Ensaios de moda para revistas e publicidade<br>
                     • Imagens para estilistas e marcas de roupa</p>
                 </div>
             </div>
         </section>
 
-        <section id="gallery" class="hidden">
-            <h2><b>Galeria</b></h2>
-            <div class="gallery-photos">
-                <div>
-                    <img src="assets/images/anna-deli.webp" alt="Ensaio feminino">
-                    <div class="image-text"><p>Ensaio individual feminino</p></div>
+        <section id="gallery" class="section section--hidden">
+            <h2 class="section__title"><b>Galeria</b></h2>
+            <div class="gallery">
+                <div class="gallery__item">
+                    <img src="assets/images/anna-deli.webp" alt="Ensaio feminino" class="gallery__image">
+                    <div class="gallery__text"><p class="gallery__description">Ensaio individual feminino</p></div>
                 </div>
-                <div>
-                    <img src="assets/images/kenneth-schipper.webp" alt="Ensaio feminino">
-                    <div class="image-text"><p>Ensaio individual feminino</p></div>
+                <div class="gallery__item">
+                    <img src="assets/images/kenneth-schipper.webp" alt="Ensaio feminino" class="gallery__image">
+                    <div class="gallery__text"><p class="gallery__description">Ensaio individual feminino</p></div>
                 </div>
-                <div>
-                    <img src="assets/images/matt-silver.webp" alt="Ensaio masculino">
-                    <div class="image-text"><p>Ensaio individual masculino</p></div>
+                <div class="gallery__item">
+                    <img src="assets/images/matt-silver.webp" alt="Ensaio masculino" class="gallery__image">
+                    <div class="gallery__text"><p class="gallery__description">Ensaio individual masculino</p></div>
                 </div>
-                <div>
-                    <img src="assets/images/fadkhera-official.webp" alt="Ensaio masculino">
-                    <div class="image-text"><p>Ensaio individual masculino</p></div>
+                <div class="gallery__item">
+                    <img src="assets/images/fadkhera-official.webp" alt="Ensaio masculino" class="gallery__image">
+                    <div class="gallery__text"><p class="gallery__description">Ensaio individual masculino</p></div>
                 </div>
-                <div>
-                    <img src="assets/images/irina-iriser.webp" alt="Ensaio de casamento">
-                    <div class="image-text"><p>Cobertura de casamento</p></div>
+                <div class="gallery__item">
+                    <img src="assets/images/irina-iriser.webp" alt="Ensaio de casamento" class="gallery__image">
+                    <div class="gallery__text"><p class="gallery__description">Cobertura de casamento</p></div>
                 </div>
-                <div>
-                    <img src="assets/images/silvana-carlos.webp" alt="Ensaio de casamento">
-                    <div class="image-text"><p>Cobertura de casamento</p></div>
+                <div class="gallery__item">
+                    <img src="assets/images/silvana-carlos.webp" alt="Ensaio de casamento" class="gallery__image">
+                    <div class="gallery__text"><p class="gallery__description">Cobertura de casamento</p></div>
                 </div>
-                <div>
-                    <img src="assets/images/karl-joshua-bernal.webp" alt="Ensaio de evento">
-                    <div class="image-text"><p>Cobertura de eventos</p></div>
+                <div class="gallery__item">
+                    <img src="assets/images/karl-joshua-bernal.webp" alt="Ensaio de evento" class="gallery__image">
+                    <div class="gallery__text"><p class="gallery__description">Cobertura de eventos</p></div>
                 </div>
-                <div>
-                    <img src="assets/images/ansspvt-titan.webp" alt="Ensaio de evento">
-                    <div class="image-text"><p>Cobertura de eventos</p></div>
-                </div>
-            </div>
-
-            <button class="big-button" id="button-gallery">Conheça Nosso Portfólio Completo</button>
-        </section>
-
-        <section id="customer-reviews" class="hidden">
-            <h2><b>Depoimentos de Clientes</b></h2>
-            <p id="customer-reviews-subtitle">Veja o que os nossos clientes mais recentes dizem sobre o estúdio.</p>
-            <div class="customer-reviews-grid">
-                <div class="review">
-                    <p class="rating">★★★★★</p>
-                    <p><strong>"Excelente serviço e atendimento!"</strong></p>
-                    <p>8 de setembro de 2025</p>
-                </div>
-                <div class="review">
-                    <p class="rating">★★★★☆</p>
-                    <p><strong>"O estúdio é incrível, com certeza recomendo."</strong></p>
-                    <p>29 de agosto de 2025</p>
-                </div>
-                <div class="review">
-                    <p class="rating">★★★★★</p>
-                    <p><strong>"Trabalho profissional e impecável."</strong></p>
-                    <p>27 de agosto de 2025</p>
-                </div>
-                <div class="review">
-                    <p class="rating">★★★★☆</p>
-                    <p><strong>"Atendimento muito bom e ambiente confortável."</strong></p>
-                    <p>20 de agosto de 2025</p>
-                </div>
-                <div class="review">
-                    <p class="rating">★★★★★</p>
-                    <p><strong>"Realmente ajudaram a dar vida ao meu projeto."</strong></p>
-                    <p>14 de agosto de 2025</p>
-                </div>
-                <div class="review">
-                    <p class="rating">★★★★★</p>
-                    <p><strong>"Voltarei mais vezes, adorei a experiência."</strong></p>
-                    <p>5 de agosto de 2025</p>
+                <div class="gallery__item">
+                    <img src="assets/images/ansspvt-titan.webp" alt="Ensaio de evento" class="gallery__image">
+                    <div class="gallery__text"><p class="gallery__description">Cobertura de eventos</p></div>
                 </div>
             </div>
+
+            <button class="gallery__button button button--big" id="gallery__portfolio-button">Conheça Nosso Portfólio Completo</button>
         </section>
 
-        <section id="contact" class="hidden">
-            <h2><b>Entre em Contato</b></h2>
-            <div class="contact-container">
-                <p>Faça suas reservas e escolha os seus serviços agora mesmo. Também estamos prontos para atender suas dúvidas e sugestões.</p>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <img src="assets/icons/email.svg" alt="Ícone de Email">
-                        <p><strong>Email:</strong> contato@pointandshoot.com</p>
+        <section id="reviews" class="section section--hidden">
+            <h2 class="section__title"><b>Depoimentos de Clientes</b></h2>
+            <p id="reviews__subtitle" class="section__subtitle">Veja o que os nossos clientes mais recentes dizem sobre o estúdio.</p>
+            <div class="reviews">
+                <div class="reviews__item">
+                    <p class="reviews__rating">★★★★★</p>
+                    <p class="reviews__text"><b>"Excelente serviço e atendimento!"</b></p>
+                    <p class="reviews__date">8 de setembro de 2025</p>
+                </div>
+                <div class="reviews__item">
+                    <p class="reviews__rating">★★★★☆</p>
+                    <p class="reviews__text"><b>"O estúdio é incrível, com certeza recomendo."</b></p>
+                    <p class="reviews__date">29 de agosto de 2025</p>
+                </div>
+                <div class="reviews__item">
+                    <p class="reviews__rating">★★★★★</p>
+                    <p class="reviews__text"><b>"Trabalho profissional e impecável."</b></p>
+                    <p class="reviews__date">27 de agosto de 2025</p>
+                </div>
+                <div class="reviews__item">
+                    <p class="reviews__rating">★★★★☆</p>
+                    <p class="reviews__text"><b>"Atendimento muito bom e ambiente confortável."</b></p>
+                    <p class="reviews__date">20 de agosto de 2025</p>
+                </div>
+                <div class="reviews__item">
+                    <p class="reviews__rating">★★★★★</p>
+                    <p class="reviews__text"><b>"Realmente ajudaram a dar vida ao meu projeto."</b></p>
+                    <p class="reviews__date">14 de agosto de 2025</p>
+                </div>
+                <div class="reviews__item">
+                    <p class="reviews__rating">★★★★★</p>
+                    <p class="reviews__text"><b>"Voltarei mais vezes, adorei a experiência."</b></p>
+                    <p class="reviews__date">5 de agosto de 2025</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section--hidden">
+            <h2 class="section__title"><b>Entre em Contato</b></h2>
+            <div class="contact">
+                <p class="contact__description">Faça suas reservas e escolha os seus serviços agora mesmo. Também estamos prontos para atender suas dúvidas e sugestões.</p>
+                <div class="contact__details">
+                    <div class="contact__item">
+                        <img src="assets/icons/email.svg" alt="Ícone de Email" class="contact__icon">
+                        <p class="contact__info"><b>Email:</b> contato@pointandshoot.com</p>
                     </div>
-                    <div class="contact-item">
-                        <img src="assets/icons/call.svg" alt="Ícone de Telefone">
-                        <p><strong>Telefone:</strong> (11) 2496-4121</p>
+                    <div class="contact__item">
+                        <img src="assets/icons/call.svg" alt="Ícone de Telefone" class="contact__icon">
+                        <p class="contact__info"><b>Telefone:</b> (11) 2496-4121</p>
                     </div>
-                    <div class="contact-item">
-                        <img src="assets/icons/local.svg" alt="Ícone de Localização">
-                        <p><strong>Endereço:</strong> Rua Girassol, 350 - Vila Madalena, São Paulo, Brasil</p>
+                    <div class="contact__item">
+                        <img src="assets/icons/local.svg" alt="Ícone de Localização" class="contact__icon">
+                        <p class="contact__info"><b>Endereço:</b> Rua Girassol, 350 - Vila Madalena, São Paulo, Brasil</p>
                     </div>
                 </div>
-                <button class="big-button" id="contact-button">Envie uma Mensagem</button>
+                <button class="contact__button button button--big" id="contact__message-button">Envie uma Mensagem</button>
             </div>
         </section>
 
     </main>
 
-    <footer class="footer-content">
-        <img class="footer-logo" src="assets/images/logo.webp" alt="Logo do Footer">
-        <div class="social-media">
-            <a href="https://facebook.com" target="_blank">
-                <img src="assets/icons/facebook.svg" alt="Facebook" width="24" height="24">
+    <footer class="footer">
+        <img class="footer__logo" src="assets/images/logo.webp" alt="Logo do Footer">
+        <div class="footer__social-media">
+            <a href="https://facebook.com" target="_blank" class="footer__social-link">
+                <img src="assets/icons/facebook.svg" alt="Facebook" width="24" height="24" class="footer__social-icon">
             </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="assets/icons/twitter.svg" alt="Twitter" width="24" height="24">
+            <a href="https://twitter.com" target="_blank" class="footer__social-link">
+                <img src="assets/icons/twitter.svg" alt="Twitter" width="24" height="24" class="footer__social-icon">
             </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="assets/icons/instagram.svg" alt="Instagram" width="24" height="24">
+            <a href="https://instagram.com" target="_blank" class="footer__social-link">
+                <img src="assets/icons/instagram.svg" alt="Instagram" width="24" height="24" class="footer__social-icon">
             </a>
         </div>
 
-        <p class="footer-address">Rua Girassol, 350 - Vila Madalena, São Paulo, Brasil</p>
+        <p class="footer__address">Rua Girassol, 350 - Vila Madalena, São Paulo, Brasil</p>
     </footer>
 </body>
 </html>

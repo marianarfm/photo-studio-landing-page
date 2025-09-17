@@ -1,10 +1,10 @@
-// Script para o slideshow
+// Slideshow script
 document.addEventListener("DOMContentLoaded", () => {
-    const slideshow = document.querySelector(".slideshow");
-    const slides = Array.from(document.querySelectorAll(".slideshow img"));
-    const navDots = document.querySelectorAll(".slideshow-nav a");
+    const slideshow = document.querySelector(".hero__slideshow");
+    const slides = Array.from(document.querySelectorAll(".hero__slide"));
+    const navDots = document.querySelectorAll(".hero__nav-dot");
     let currentIndex = 0;
-    const slideInterval = 5000; // 5 segundos
+    const slideInterval = 5000; // 5 secs
 
     function updateNavDots() {
         navDots.forEach(dot => dot.classList.remove("active-dot"));
@@ -34,22 +34,22 @@ document.addEventListener("DOMContentLoaded", () => {
     updateNavDots();
 });
 
-// Script de fade-in para as seções
+// Animation on scroll script
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry);
         if (entry.isIntersecting)
-            entry.target.classList.add("show");
+            entry.target.classList.add("section--show");
         else
-            entry.target.classList.remove("show");
+            entry.target.classList.remove("section--show");
     });
 });
 
-const hiddenElements = document.querySelectorAll(".hidden");
+const hiddenElements = document.querySelectorAll(".section--hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 
-// Script para o botão de menu
+// Toggle menu script
 function toggleMenu() {
-    const navBarItems = document.getElementsByClassName("nav-bar-items")[0];
-    navBarItems.classList.toggle("show");
+    const navList = document.querySelector(".nav__list");
+    navList.classList.toggle("nav__list--show");
 }
